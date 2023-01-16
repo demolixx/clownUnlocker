@@ -83,6 +83,32 @@ local function unlockCar()
 end
 stats.stat_set_bool(carprize, true, true)
 end
+local function unlockFastStuff()
+    local leplayer = script.get_global_i(1574918)
+  if leplayer == 0 then
+    lol1 = "3140238014"
+	lol2 = "1111425851"
+	lol3 = "722427520"
+	lol4 = "3577063022"
+	lol5 = "1560239065"
+	lol6 = "1298945047"
+  else
+    lol1 = "3860087177"
+	lol2 = "3710609417"
+	lol3 = "3451590728"
+	lol4 = "737747541"
+	lol5 = "2502868809"
+	lol6 = "689568873"
+end
+stats.stat_set_int(lol1, -1, true)
+stats.stat_set_int(lol2, -1, true)
+stats.stat_set_int(lol3, -1, true)
+stats.stat_set_int(lol4, -1, true)
+stats.stat_set_int(lol5, -1, true)
+stats.stat_set_int(lol6, -1, true)
+end
+
+
 rootManu = menu.add_feature("i aint payin $15", "parent", 0) --Show dat shit in the scripts submenu
 cooldownManu = menu.add_feature("disable le cooldowns", "parent", rootManu.id) --Show dat shit in the scripts submenu
 drugManu = menu.add_feature("le drug war dlc", "parent", rootManu.id) --Show dat shit in the scripts submenu
@@ -128,6 +154,10 @@ end)
 menu.add_feature("unlock prize car", "action", nfsManu.id, function(f)
     unlockCar()
 	menu.notify("Unlocked", "Check your interaction menu")
+end)
+menu.add_feature("unlock fast run and reload", "action", generalManu.id, function(f)
+    unlockFastStuff()
+	menu.notify("Unlocked", "Switch Sessions")
 end)
 menu.add_feature("i payed $15 men!!!", "action", rootManu.id, function(f)
     menu.notify("well done, you're retarded.", "pAyPAl oR cReDItcARd sIR ?")
