@@ -48,6 +48,12 @@ local function streetDeala()
         system.wait(2)
     end
 end
+local function dlcClothing()
+           for i = 33973, 34112, 1 do
+         script.set_global_i(262145 + i, 1)
+        system.wait(10)
+    end
+end
 
 rootManu = menu.add_feature("i aint payin $15", "parent", 0) --Show dat shit in the scripts submenu
 menu.add_feature("gun van", "action", rootManu.id, function(f) 
@@ -75,6 +81,11 @@ menu.add_feature("street deala", "action", rootManu.id, function(f)
     streetDeala()
     menu.notify("Unlocked it for you cunt")
 end)
+menu.add_feature("le dlc clothing", "action", rootManu.id, function(f)
+    dlcClothing()
+    menu.notify("i copy pasted this -Lol", "prob unlocked everything lol")
+end)
+
 
 menu.add_feature("i paid $15 !!!", "action", rootManu.id, function(f)
     menu.notify("well done, you're retarded.", "pAyPAl oR cReDItcARd sIR ?")
