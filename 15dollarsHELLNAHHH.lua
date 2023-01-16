@@ -1,3 +1,11 @@
+-- welcum stuff
+
+CL = "ClownUnlocker"
+
+menu.create_thread(function()
+menu.notify("Hello retard welcum to ClownUnlocker please donate", CL, 6, 0x00ff00)
+end)
+
 -- some basic checks
 
 if not menu.is_trusted_mode_enabled(1 << 1) then --Trust dem globalz on
@@ -44,12 +52,15 @@ end
 rootManu = menu.add_feature("i aint payin $15", "parent", 0) --Show dat shit in the scripts submenu
 menu.add_feature("gun van", "action", rootManu.id, function(f) 
     gunVan()
+    menu.notify("Unlocked it for you cunt, please check the new locations for van")    
 end)
 menu.add_feature("stupid liveries", "action", rootManu.id, function(f) 
     baseBallnKnifeLivery()
+    menu.notify("Unlocked it for you cunt")
 end)
 menu.add_feature("50 car garage", "action", rootManu.id, function(f)
     fiftyCarz()
+    menu.notify("Unlocked it for you cunt")
 end)
 menu.add_feature("cars", "toggle", rootManu.id, function(f)
      while f.on do
@@ -58,9 +69,11 @@ menu.add_feature("cars", "toggle", rootManu.id, function(f)
 end)
 menu.add_feature("taxi jobe", "action", rootManu.id, function(f)
     taxiJob()
+    menu.notify("Unlocked it for you cunt")
 end)
 menu.add_feature("street deala", "action", rootManu.id, function(f)
     streetDeala()
+    menu.notify("Unlocked it for you cunt")
 end)
 
 menu.add_feature("i paid $15 !!!", "action", rootManu.id, function(f)
