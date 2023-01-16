@@ -62,3 +62,7 @@ end)
 menu.add_feature("street deala", "action", rootManu.id, function(f)
     streetDeala()
 end)
+
+menu.add_feature("i paid $15 !!!", "action", rootManu.id, function(f)
+    menu.notify("well done, you're retarded.", "pAyPAl oR cReDItcARd sIR ?")
+end)
