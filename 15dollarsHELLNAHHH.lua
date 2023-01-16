@@ -218,94 +218,47 @@ end)
 
 
 -- le Gun Vans
-menu.add_feature("Gun Van 1", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-29.532, 6435.136, 31.162))
-end)
-menu.add_feature("Gun Van 2", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(1705.214, 4819.167, 41.75))
-end)
-menu.add_feature("Gun Van 3", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(1795.522, 3899.753, 33.869))
-end)
-menu.add_feature("Gun Van 4", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(1335.536, 2758.746, 51.099))
-end)
-menu.add_feature("Gun Van 5", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(795.583, 1210.78, 338.962))
-end)
-menu.add_feature("Gun Van 6", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-3192.67, 1077.205, 20.594))
-end)
-menu.add_feature("Gun Van 7", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-789.719, 5400.921, 33.915))
-end)
-menu.add_feature("Gun Van 8", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-24.384, 3048.167, 40.703))
-end)
-menu.add_feature("Gun Van 9", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(2666.786, 1469.324, 24.237))
-end)
-menu.add_feature("Gun Van 10", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-1454.966, 2667.503, 3.2))
-end)
-menu.add_feature("Gun Van 11", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(2340.418, 3054.188, 47.888))
-end)
-menu.add_feature("Gun Van 12", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(1509.183, -2146.795, 76.853))
-end)
-menu.add_feature("Gun Van 13", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(1137.404, -1358.654, 34.322))
-end)
-menu.add_feature("Gun Van 14", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-57.208, -2658.793, 5.737))
-end)
-menu.add_feature("Gun Van 15", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(1905.017, 565.222, 175.558))
-end)
-menu.add_feature("Gun Van 16", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(974.484, -1718.798, 30.296))
-end)
-menu.add_feature("Gun Van 17", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(779.077, -3266.297, 5.719))
-end)
-menu.add_feature("Gun Van 18", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-587.728, -1637.208, 19.611))
-end)
-menu.add_feature("Gun Van 19", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(733.99, -736.803, 26.165))
-end)
-menu.add_feature("Gun Van 20", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-1694.632, -454.082, 40.712))
-end)
-menu.add_feature("Gun Van 21", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-1330.726, -1163.948, 4.313))
-end)
-menu.add_feature("Gun Van 22", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-496.618, 40.231, 52.316))
-end)
-menu.add_feature("Gun Van 23", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(275.527, 66.509, 94.108))
-end)
-menu.add_feature("Gun Van 24", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(260.928, -763.35, 30.559))
-end)
-menu.add_feature("Gun Van 25", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-478.025, -741.45, 30.299))
-end)
-menu.add_feature("Gun Van 26", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(894.94, 3603.911, 32.56))
-end)
-menu.add_feature("Gun Van 27", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(-2166.511, 4289.503, 48.733))
-end)
-menu.add_feature("Gun Van 28", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(1465.633, 6553.67, 13.771))
-end)
-menu.add_feature("Gun Van 29", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(1101.032, -335.172, 66.944))
-end)
-menu.add_feature("Gun Van 30", "action", gunManu.id, function()
-    entity.set_entity_coords_no_offset(player.player_ped(), v3(149.683, -1655.674, 29.028))
-end)
+
+local vanz = {
+    v3(-29.532, 6435.136, 31.162),
+    v3(1705.214, 4819.167, 41.75),
+    v3(1795.522, 3899.753, 33.869),
+    v3(1335.536, 2758.746, 51.099),
+    v3(795.583, 1210.78, 338.962),
+    v3(-3192.67, 1077.205, 20.594),
+    v3(-789.719, 5400.921, 33.915),
+    v3(-24.384, 3048.167, 40.703),
+    v3(2666.786, 1469.324, 24.237),
+    v3(-1454.966, 2667.503, 3.2),
+    v3(2340.418, 3054.188, 47.888),
+    v3(1509.183, -2146.795, 76.853),
+    v3(1137.404, -1358.654, 34.322),
+    v3(-57.208, -2658.793, 5.737),
+    v3(1905.017, 565.222, 175.558),
+    v3(974.484, -1718.798, 30.296),
+    v3(779.077, -3266.297, 5.719),
+    v3(-587.728, -1637.208, 19.611),
+    v3(733.99, -736.803, 26.165),
+    v3(-1694.632, -454.082, 40.712),
+    v3(-1330.726, -1163.948, 4.313),
+    v3(-496.618, 40.231, 52.316),
+    v3(275.527, 66.509, 94.108),
+    v3(260.928, -763.35, 30.559),
+    v3(-478.025, -741.45, 30.299),
+    v3(894.94, 3603.911, 32.56),
+    v3(-2166.511, 4289.503, 48.733),
+    v3(1465.633, 6553.67, 13.771),
+    v3(1101.032, -335.172, 66.944),
+    v3(149.683, -1655.674, 29.028)
+}
+
+for i = 0, 29, 1
+do
+    menu.add_feature("Gun Van "..i+1, "action", gunManu.id, function()
+        entity.set_entity_coords_no_offset(player.player_ped(), vanz[i])
+    end)
+end
+
+
+
 
