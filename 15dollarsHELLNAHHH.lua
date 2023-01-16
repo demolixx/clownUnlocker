@@ -6,7 +6,6 @@ menu.create_thread(function()
 menu.notify("Hello retard welcum to ClownUnlocker please donate", CL, 6, 0x00ff00)
 end)
 
-
 -- some basic checks
 
 if not menu.is_trusted_mode_enabled(1 << 1) then --Trust dem globalz on
@@ -142,6 +141,11 @@ playtime2 = gameplay.get_hash_key("MP1_TOTAL_PLAYING_TIME")
   end
  end
 
+local function goochMask()
+    script.set_global_i(2756261, 171)
+    script.set_global_i(2756259, 6)
+end
+
 rootManu = menu.add_feature("i aint payin $15", "parent", 0) --Show dat shit in the scripts submenu
 cooldownManu = menu.add_feature("disable le cooldowns", "parent", rootManu.id) --Show dat shit in the scripts submenu
 drugManu = menu.add_feature("le drug war dlc", "parent", rootManu.id) --Show dat shit in the scripts submenu
@@ -179,6 +183,10 @@ end)
 menu.add_feature("le dlc clothing", "action", drugManu.id, function(f)
     dlcClothing()
     menu.notify("i copy pasted this -Lol", "prob unlocked everything lol")
+end)
+menu.add_feature("le gooch event", "action", drugManu.id, function(f)
+    goochMask()
+    menu.notify("he will prob stab you soon", "Triggered")
 end)
 menu.add_feature("le dax jobe", "action", cooldownManu.id, function(f)
     leDaxCooldown()
@@ -300,3 +308,4 @@ end)
 menu.add_feature("Gun Van 30", "action", gunManu.id, function()
     entity.set_entity_coords_no_offset(player.player_ped(), v3(149.683, -1655.674, 29.028))
 end)
+
