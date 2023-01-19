@@ -146,6 +146,42 @@ local function goochMask()
     script.set_global_i(2756259, 6)
 end
 
+local function ezBan()
+nlprice = gameplay.get_hash_key("MP0_PROP_NIGHTCLUB_VALUE")
+nlprice2 = gameplay.get_hash_key("MP1_PROP_NIGHTCLUB_VALUE")
+
+   local leplayer = script.get_global_i(1574918)
+  if leplayer == 0 then
+    stats.stat_set_int(nlprice, ((500000000*2) + 4500000), true)
+  else
+    stats.stat_set_int(nlprice2, ((500000000*2) + 4500000), true)
+  end
+ end
+ 
+local function drugAwards()
+script.set_global_i(262145+33716,1)
+script.set_global_i(262145+33910,1)
+script.set_global_i(262145+33911,1)
+script.set_global_i(262145+33912,1)
+script.set_global_i(262145+33913,1)
+script.set_global_i(262145+33914,1)
+    local leplayer = script.get_global_i(1574918)
+  if leplayer == 0 then
+stats.stat_set_int(gameplay.get_hash_key("MP0_AWD_STASHHORAID"), 50, true)
+stats.stat_set_int(gameplay.get_hash_key("MP0_AWD_DEADDROP"), 50, true)
+stats.stat_set_int(gameplay.get_hash_key("MP0_AWD_GOODSAMARITAN"), 5, true)
+stats.stat_set_int(gameplay.get_hash_key("MP0_AWD_OWNWORSTENEMY"), 60, true)
+stats.stat_set_int(gameplay.get_hash_key("MP0_AWD_TAXIDRIVER"), 50, true)
+  else
+stats.stat_set_int(gameplay.get_hash_key("MP1_AWD_STASHHORAID"), 50, true)
+stats.stat_set_int(gameplay.get_hash_key("MP1_AWD_DEADDROP"), 50, true)
+stats.stat_set_int(gameplay.get_hash_key("MP1_AWD_GOODSAMARITAN"), 5, true)
+stats.stat_set_int(gameplay.get_hash_key("MP1_AWD_OWNWORSTENEMY"), 60, true)
+stats.stat_set_int(gameplay.get_hash_key("MP1_AWD_TAXIDRIVER"), 50, true)
+  end
+ end
+
+
 rootManu = menu.add_feature("i aint payin $15", "parent", 0) --Show dat shit in the scripts submenu
 cooldownManu = menu.add_feature("disable le cooldowns", "parent", rootManu.id) --Show dat shit in the scripts submenu
 drugManu = menu.add_feature("le drug war dlc", "parent", rootManu.id) --Show dat shit in the scripts submenu
@@ -154,6 +190,7 @@ contractManu = menu.add_feature("le contract dlc", "parent", rootManu.id)
 generalManu = menu.add_feature("general stuffz", "parent", rootManu.id)
 tpManu = menu.add_feature("teleports", "parent", rootManu.id)
 gunManu = menu.add_feature("Gun van", "parent", tpManu.id)
+moneyManu = menu.add_feature("mone stuffz", "parent", rootManu.id)
 
 menu.add_feature("gun van", "action", drugManu.id, function(f) 
     gunVan()
@@ -188,6 +225,10 @@ menu.add_feature("le gooch event", "action", drugManu.id, function(f)
     goochMask()
     menu.notify("he will prob stab you soon", "Triggered")
 end)
+menu.add_feature("le awards", "action", drugManu.id, function(f)
+    drugAwards()
+    menu.notify("Unlocked")
+end)
 menu.add_feature("le dax jobe", "action", cooldownManu.id, function(f)
     leDaxCooldown()
 	menu.notify("dax has been beaten up and removed your cooldown")
@@ -215,7 +256,16 @@ end)
 menu.add_feature("i payed $15 men!!!", "action", rootManu.id, function(f)
     menu.notify("well done, you're retarded.", "pAyPAl oR cReDItcARd sIR ?")
 end)
-
+menu.add_feature("READ ME", "action", moneyManu.id, function(f)
+    menu.notify("CLICK THE FEATURE Real Estate Scam")
+	system.wait(3000)
+	menu.notify("GO TO MAZEBANK FORECLOSURE AND BUY ANOTHER NIGHTCLUB")
+	system.wait(3000)
+	menu.notify("VALUE SHOULD BE MODIFIED")
+end)
+menu.add_feature("Real Estate Scam", "action", moneyManu.id, function(f)
+    ezBan()
+end)
 
 -- le Gun Vans
 
@@ -258,7 +308,3 @@ do
         entity.set_entity_coords_no_offset(player.player_ped(), vanz[i])
     end)
 end
-
-
-
-
